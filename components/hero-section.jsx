@@ -11,8 +11,7 @@ export default function HeroSection() {
                         Next.js Starter with  <FlipWords words={['auth.js', 'prisma', 'shadcn']} duration={3000} />
                     </h1>
                     <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                        Kickstart your Next.js project with our streamlined and customizable starter template. Featuring modern design, essential tools, and best practices, it’s the perfect foundation for building high-performance web applications effortlessly.
-                    </p>
+                        Jumpstart your Next.js projects with our comprehensive starter kit featuring Prisma for robust database management, CockroachDB for scalable and resilient data storage, Auth.js for seamless authentication, and Shadcn for stunning UI components. Perfect for building modern, secure, and scalable web applications effortlessly.                    </p>
                     <Link
                         href="#"
                         className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
