@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
         >
           <Navbar />
           <div className={cn(
-            "min-h-screen bg-background font-sans antialiased",
+            " md:container min-h-screen bg-background font-sans antialiased",
             fontSans.variable
           )}>
 

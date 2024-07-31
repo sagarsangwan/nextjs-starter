@@ -28,7 +28,7 @@ async function UserAvatar() {
                                 <AvatarImage src={session?.user?.image} alt={session?.user?.name} />
                             </Avatar>
                         </DropdownMenuTrigger>
-                        <DropdownMenuContent className="w-56">
+                        <DropdownMenuContent className="w-56" align="start">
                             <DropdownMenuLabel>My Account</DropdownMenuLabel>
                             <DropdownMenuSeparator />
                             <DropdownMenuGroup>
