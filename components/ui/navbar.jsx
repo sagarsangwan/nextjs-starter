@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { MenuIcon } from "lucide-react"
 import { auth } from "@/lib/auth"
 import UserAvatar from "../user/user-avatar"
+import { ModeToggle } from "./mode-toggle"
 
 export default async function Navbar() {
     const session = await auth()
@@ -27,6 +28,7 @@ export default async function Navbar() {
                     <Link href="#" className="text-sm font-medium transition-colors hover:text-primary" prefetch={false}>
                         Contact
                     </Link>
+                    <ModeToggle />
                     <UserAvatar />
                 </nav>
                 <Sheet>
@@ -55,6 +57,7 @@ export default async function Navbar() {
                                 <Link href="#" className="text-sm font-medium transition-colors hover:text-primary" prefetch={false}>
                                     Contact
                                 </Link>
+                                <ModeToggle />
                                 <UserAvatar />
                             </nav>
                         </div>

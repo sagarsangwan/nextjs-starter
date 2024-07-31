@@ -1,10 +1,8 @@
-import React from 'react'
-
-function Providers() {
+import * as React from "react"
+import { ThemeProvider as NextThemesProvider } from "next-themes"
+function Providers({ children, ...props }) {
     return (
-        <div>
-
-        </div>
+        <NextThemesProvider {...props}>{children}</NextThemesProvider>
     )
 }
 
