@@ -15,54 +15,56 @@ export default async function Navbar() {
                     <MountainIcon className="h-6 w-6" />
                     <span className="sr-only">Your Name</span>
                 </Link>
-                <nav className="hidden items-center gap-6 md:flex">
-                    <Link href="#" className="text-sm font-medium transition-colors hover:text-primary" prefetch={false}>
-                        Home
-                    </Link>
-                    <Link href="#" className="text-sm font-medium transition-colors hover:text-primary" prefetch={false}>
-                        About
-                    </Link>
-                    <Link href="#" className="text-sm font-medium transition-colors hover:text-primary" prefetch={false}>
-                        Services
-                    </Link>
-                    <Link href="#" className="text-sm font-medium transition-colors hover:text-primary" prefetch={false}>
-                        Contact
-                    </Link>
+                <div className=" flex flex-wrap">
+                    <nav className="hidden items-center gap-6 md:flex">
+                        <Link href="#" className="text-sm font-medium transition-colors hover:text-primary" prefetch={false}>
+                            Home
+                        </Link>
+                        <Link href="#" className="text-sm font-medium transition-colors hover:text-primary" prefetch={false}>
+                            About
+                        </Link>
+                        <Link href="#" className="text-sm font-medium transition-colors hover:text-primary" prefetch={false}>
+                            Services
+                        </Link>
+                        <Link href="#" className="text-sm font-medium transition-colors hover:text-primary" prefetch={false}>
+                            Contact
+                        </Link>
+
+                    </nav>
                     <ModeToggle />
                     <UserAvatar />
-                </nav>
-                <Sheet>
-                    <SheetTrigger asChild>
-                        <Button variant="ghost" size="icon" className="md:hidden">
-                            <MenuIcon className="h-6 w-6" />
-                            <span className="sr-only">Toggle navigation</span>
-                        </Button>
-                    </SheetTrigger>
-                    <SheetContent side="right" className="w-full max-w-xs bg-background p-6">
-                        <div className="flex flex-col gap-6">
-                            <Link href="#" className="flex items-center gap-2 text-lg font-semibold" prefetch={false}>
-                                <MountainIcon className="h-6 w-6" />
-                                <span className="sr-only">Your Name</span>
-                            </Link>
-                            <nav className="flex flex-col gap-4">
-                                <Link href="#" className="text-sm font-medium transition-colors hover:text-primary" prefetch={false}>
-                                    Home
+                    <Sheet>
+                        <SheetTrigger asChild>
+                            <Button variant="ghost" size="icon" className="md:hidden">
+                                <MenuIcon className="h-6 w-6" />
+                                <span className="sr-only">Toggle navigation</span>
+                            </Button>
+                        </SheetTrigger>
+                        <SheetContent side="right" className="w-full max-w-xs bg-background p-6">
+                            <div className="flex flex-col gap-6">
+                                <Link href="#" className="flex items-center gap-2 text-lg font-semibold" prefetch={false}>
+                                    <MountainIcon className="h-6 w-6" />
+                                    <span className="sr-only">Your Name</span>
                                 </Link>
-                                <Link href="#" className="text-sm font-medium transition-colors hover:text-primary" prefetch={false}>
-                                    About
-                                </Link>
-                                <Link href="#" className="text-sm font-medium transition-colors hover:text-primary" prefetch={false}>
-                                    Services
-                                </Link>
-                                <Link href="#" className="text-sm font-medium transition-colors hover:text-primary" prefetch={false}>
-                                    Contact
-                                </Link>
-                                <ModeToggle />
-                                <UserAvatar />
-                            </nav>
-                        </div>
-                    </SheetContent>
-                </Sheet>
+                                <nav className="flex flex-col gap-4">
+                                    <Link href="#" className="text-sm font-medium transition-colors hover:text-primary" prefetch={false}>
+                                        Home
+                                    </Link>
+                                    <Link href="#" className="text-sm font-medium transition-colors hover:text-primary" prefetch={false}>
+                                        About
+                                    </Link>
+                                    <Link href="#" className="text-sm font-medium transition-colors hover:text-primary" prefetch={false}>
+                                        Services
+                                    </Link>
+                                    <Link href="#" className="text-sm font-medium transition-colors hover:text-primary" prefetch={false}>
+                                        Contact
+                                    </Link>
+
+                                </nav>
+                            </div>
+                        </SheetContent>
+                    </Sheet>
+                </div>
             </div>
         </header>
     )

@@ -41,9 +41,7 @@ async function UserAvatar() {
                                 <DropdownMenuItem>
                                     Settings
                                 </DropdownMenuItem>
-                                <DropdownMenuItem>
-                                    Keyboard shortcuts
-                                </DropdownMenuItem>
+
                             </DropdownMenuGroup>
 
                             <DropdownMenuSeparator />
